@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Notices</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script>
+	    tailwind.config = {
+	      theme: {
+	        extend: {
+	          colors: {
+	            clifford: '#da373d',
+	          },
+	          fontFamily:{
+	        	  'roboto':['Roboto', 'sans-serif'],
+	        	  'abril': ['Abril Fatface', 'cursive'],
+	        	  'bruno' : ['Bruno Ace SC', 'cursive']
+	          }
+	        }
+	      }
+	    }
+	  </script>
+	  <style>
+		body{
+			background-image : url('https://i.pinimg.com/474x/8b/26/f9/8b26f942a2c77ff950e70b6948bfebe4.jpg');
+			background-size: cover;
+		}
+	</style>
+</head>
+<body class="font-roboto flex  h-screen justify-center items-center">
+	<div class="bg-white py-[40px] px-[30px] rounded-lg shadow flex flex-col items-center space-y-5">
+		<h1 class="text-lg font-abril">Voici les détails de l'avis de la base de données</h1>
+	</div>
+</body>
+</html>

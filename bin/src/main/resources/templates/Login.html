@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script>
+	    tailwind.config = {
+	      theme: {
+	        extend: {
+	          colors: {
+	            clifford: '#da373d',
+	          },
+	          fontFamily:{
+	        	  'roboto':['Roboto', 'sans-serif'],
+	        	  'abril': ['Abril Fatface', 'cursive'],
+	        	  'bruno' : ['Bruno Ace SC', 'cursive']
+	          }
+	        }
+	      }
+	    }
+	  </script>
+	<style>
+		body{
+			background-image : url('https://store-images.s-microsoft.com/image/apps.26620.13682773009232620.62a18cea-40b3-43f1-811b-46ef9d15331b.96a2c700-d04f-4128-b94c-596de2c4cc83');
+		}
+	</style>
+</head>
+<body class="bg-[#BFBFBF] font-roboto">
+<div class="flex flex-col lg:flex-row items-center lg:space-x-5 space-y-4 lg:space-y-0 justify-center h-screen">
+	<div class="flex items-center flex-col space-y-3">
+		<h1 class="text-4xl lg:text-6xl font-abril">Lamdibih ILhame</h1>
+		<h3 class="font-bold text-lg">4 IIR GROUPE 6</h3>
+		<p class="font-bruno">We are Glad to See You Again !</p>
+	</div>
+	<form action="/login" method="post" class="bg-white p-[50px] 2xl:p-[90px] space-y-4 rounded shadow-lg flex flex-col mx-5 lg:mx-0 w-full lg:w-1/3">
+		  <h1 class="text-4xl font-bold text-center font-bruno">Sign In</h1>
+		<div class="flex flex-col space-y-2">
+		  <label for="username" class=" font-bold text-md">Username ou Email Address</label>		
+	  		<input type="text" id="username" name="username" placeholder="Username"  class="focus:border-red-400 outline-none py-2 px-5 text-md placeholder:text-gray-400 rounded border border-gray-400"/>
+		</div>
+		<div class="flex flex-col space-y-2">
+		  <label for="password" class=" font-bold text-md">Password:</label>
+		  <input type="password" id="password" name="password" placeholder="password" class="focus:border-red-400 outline-none py-2 px-5 text-md placeholder:text-gray-400 rounded border border-gray-400"/>
+		</div>
+	 	 <input type="submit" value="Log In" class="py-3 bg-red-400 rounded text-white font-bruno"/>
+	  <div class="">
+	  </div>
+	</form>
+</div>
+
+
+</body>
+</html>
